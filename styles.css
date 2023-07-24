@@ -1,6 +1,21 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: Helvetica, serif;
     color: seashell;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 body {
     background-color: black;
@@ -20,7 +35,7 @@ header {
     background-color: black;
 }
 .headerimg img{
-    margin: 7px 20px;
+    margin: 8px 20px;
     height: 50px;
 }
 .headertxt {
@@ -29,9 +44,12 @@ header {
 .headertxt p{
     display: inline-flex;
     text-decoration: underline;
-    padding: 0 10px;
-}
 
+    padding: 25px 10px;
+}
+.headertxt p:hover {
+    color: #888888;
+}
 
 .mainpanel {
 
@@ -53,11 +71,13 @@ header {
     height: max-content;
     text-align: center;
     background-color: black;
+    padding: 30px;
 
 }
 
 
 .teaspanel {
+    padding-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -80,9 +100,16 @@ header {
     margin-top: 10px;
 }
 
+
 .locationspanel {
+    padding-top: 70px;
     display: flex;
     justify-content: center;
+
+}
+.locationspanel ::-webkit-scrollbar {
+    width: 0;
+}{
 
 }
 .locations {
@@ -90,21 +117,23 @@ header {
     background-image: url("img-locations-background.jpg");
     background-repeat: no-repeat;
     width: 1200px;
-
+    overflow-y: scroll;
 }
+
 .locationstxt {
     text-align: center;
     width: 100%;
     padding-top: 30px;
-
 }
 .locationpanels {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+
 }
 .location {
+    font-size: 22px;
     opacity: 0.9;
     margin: 15px 40px;
     text-align: center;
@@ -116,6 +145,7 @@ header {
 }
 
 .TeaCozysocials {
+    padding-top: 70px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -124,9 +154,11 @@ header {
 .Cozysocials {
     text-align: center;
     height: 200px;
+    font-size: 22px;
 }
 
 footer {
     padding-left: 20px;
+    padding-bottom: 15px;
     text-align: left;
 }
