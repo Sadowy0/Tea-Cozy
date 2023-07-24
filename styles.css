@@ -1,0 +1,132 @@
+* {
+    font-family: Helvetica, serif;
+    color: seashell;
+}
+body {
+    background-color: black;
+}
+
+header {
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: black;
+}
+.headerimg img{
+    margin: 7px 20px;
+    height: 50px;
+}
+.headertxt {
+    white-space: nowrap;
+}
+.headertxt p{
+    display: inline-flex;
+    text-decoration: underline;
+    padding: 0 10px;
+}
+
+
+.mainpanel {
+
+    background-image: url("img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+
+}
+.ourmissiontxt {
+    opacity: 0.9;
+    justify-content: center;
+    width: 1200px;
+    height: max-content;
+    text-align: center;
+    background-color: black;
+
+}
+
+
+.teaspanel {
+    display: flex;
+    justify-content: center;
+}
+.teaofthemonth {
+    width: 1000px;
+}
+.teaofthemonth h1, p{
+    text-align: center;
+}
+.teaspanel img {
+    height: 200px;
+    width: 300px;
+}
+.teasflex {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.teasflex p {
+    margin-top: 10px;
+}
+
+.locationspanel {
+    display: flex;
+    justify-content: center;
+
+}
+.locations {
+    height: 500px;
+    background-image: url("img-locations-background.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+
+}
+.locationstxt {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+
+}
+.locationpanels {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.location {
+    opacity: 0.9;
+    margin: 15px 40px;
+    text-align: center;
+    min-width: 250px;
+    min-height: 250px;
+    flex: 1 1 0;
+    background-color: black;
+    padding-top: 15px;
+}
+
+.TeaCozysocials {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.Cozysocials {
+    text-align: center;
+    height: 200px;
+}
+
+footer {
+    padding-left: 20px;
+    text-align: left;
+}
